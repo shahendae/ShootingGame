@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Diplomata' rel='stylesheet'>
+
+
+    </head>
+    <body>
+            <div class="card bg-dark text-white">
+                    <img src="images/battlecruiser_splash_1920.png" class="card-img">
+                    <div class="card-img-overlay text-center">
+            
+                      <h1>Shooting Gun</h1>
+  
+                      <form action="game.html">
+                        <div class="row text-center">
+                          <div class="col-3"></div>
+                        <input type="text" name="fname" id="user_name" class="form-control col-6" placeholder="Your name" required>
+                        </div>
+                        <div class="row">
+                          <div class="col-4"></div>
+                        <button type="submit" id="btn2" value="Submit" class="btn btn-primary btn-lg btn-block col-4" > Play </button>
+                        </div>
+                      </form>
+
+                      <script>
+
+                          var user_namee = document.getElementById("user_name");
+                          var btnn = document.getElementById("btn2");
+
+                        
+                          btnn.addEventListener("click",function(){
+
+                            localStorage.setItem('user',user_namee.value);
+
+                          })
+                          
+                      </script>
+
+                    </div>
+                  </div>
+
+
+    </body>
+</html>
